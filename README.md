@@ -1,11 +1,16 @@
 # Overview
 
-This program contains multiple sorting algorithms with a test harness.
-The four sorting algorithms are:
--Insertion sort
--Batcher's odd even merge sort
--Heap sort
--Quick sort
+This is a program for a lossless compression algorithm known as Huffman Coding. The basic
+idea is that each character gets a unique bitstring , and characters  that appear more 
+frequently will be represented with less bits. The encoder is responsible for compressing
+date into arbitrary bytes, and the decoder will revert it to it's original state.
+
+An integral part of this program is an abstract data type called a node. Inside every 
+node is a pointer to it's left child, and it's right child (even if the child is NULL). 
+It also contains the symbol it corresponds to, and the frequency of which said symbol 
+occurs. This will be used to implement a priority queue of nodes which we will use to 
+sort through our data.
+
 
 ## Using the program
 
