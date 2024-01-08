@@ -3,7 +3,7 @@
 This is a program for a lossless compression algorithm known as Huffman Coding. The basic
 idea is that each character gets a unique bitstring , and characters  that appear more 
 frequently will be represented with less bits. The encoder is responsible for compressing
-date into arbitrary bytes, and the decoder will revert it to it's original state.
+data into arbitrary bytes, and the decoder will revert it to it's original state.
 
 An integral part of this program is an abstract data type called a node. Inside every 
 node is a pointer to it's left child, and it's right child (even if the child is NULL). 
